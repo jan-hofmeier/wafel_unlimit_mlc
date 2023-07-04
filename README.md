@@ -1,6 +1,6 @@
 # Stroopwafel plugin to unlimte the MLC size
 
-This plugin for [stroopwafel]([GitHub - shinyquagsire23/stroopwafel: iosuhax for de_Fuse](https://github.com/shinyquagsire23/stroopwafel)) packages IOSU patches from [GaryOrderNichts]([GaryOderNichts · GitHub](https://github.com/GaryOderNichts)) for easy usage.
+This plugin for [stroopwafel](https://github.com/shinyquagsire23/stroopwafel) packages IOSU patches from [GaryOrderNichts](https://github.com/GaryOderNichts) for easy usage.
 
 - Removes predefined MLC sizes so IOSU sees the full size of the MLC media
 
