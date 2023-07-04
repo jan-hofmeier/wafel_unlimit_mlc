@@ -33,7 +33,12 @@ The SCFM needs to be disabled, as it doesn't work with more than 64GB. In my mea
 
 One way to install a larger MLC media on your Wii U would be to replace the 8GB / 32GB eMMC with a micro SD card. To make the replacement more convieneint I recommend Voultars [Wii-U NAND-AID - eMMC Recovery and Replacement Interposer](https://gbatemp.net/threads/wii-u-nand-aid-emmc-recovery-and-replacement-interposer-public-test.630798/)
 
+## Building
 
+```bash
+export STROOPWAFEL_ROOT=/path/too/stroopwafel-repo
+make
+```
 
 ## Thanks
 
