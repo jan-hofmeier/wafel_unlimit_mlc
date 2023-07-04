@@ -1,0 +1,368 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+                              main.o (memcpy)
+/opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+                              crt0.o (memset)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 main.o
+ .data          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .debug_info    0x0000000000000000      0x35c main.o
+ .debug_abbrev  0x0000000000000000      0x14a main.o
+ .debug_loclists
+                0x0000000000000000       0x6d main.o
+ .debug_aranges
+                0x0000000000000000       0x30 main.o
+ .debug_rnglists
+                0x0000000000000000       0x20 main.o
+ .debug_line    0x0000000000000000      0x245 main.o
+ .debug_str     0x0000000000000000      0x2b0 main.o
+ .comment       0x0000000000000000       0x24 main.o
+ .debug_frame   0x0000000000000000       0x64 main.o
+ .data          0x0000000000000000        0x0 crt0.o
+ .bss           0x0000000000000000        0x0 crt0.o
+ .debug_line    0x0000000000000000       0x4a crt0.o
+ .debug_line_str
+                0x0000000000000000       0x2d crt0.o
+ .debug_info    0x0000000000000000       0x24 crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 crt0.o
+ .debug_aranges
+                0x0000000000000000       0x20 crt0.o
+ .debug_str     0x0000000000000000       0x32 crt0.o
+ .text          0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+ .comment       0x0000000000000000       0x24 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+ .comment       0x0000000000000000       0x24 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000200                PROVIDE (__start__ = 0x200)
+                0x0000000000000200                . = __start__
+
+.text           0x0000000000000200      0x430
+ *(.start)
+ .start         0x0000000000000200       0x9c crt0.o
+                0x0000000000000200                kern_entry
+                0x0000000000000200                _start
+                0x0000000000000204                mcp_entry
+                0x0000000000000210                next_plugin
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text.mcp_main
+                0x000000000000029c       0x34 main.o
+                0x000000000000029c                mcp_main
+ .text._patch_copy_k
+                0x00000000000002d0       0x20 main.o
+ .text.kern_main
+                0x00000000000002f0      0x128 main.o
+                0x00000000000002f0                kern_main
+                0x0000000000000330                pre_0x107bdb14
+                0x0000000000000334                post_0x107bdb14
+                0x0000000000000354                pre_0x107d1f28
+                0x0000000000000358                post_0x107d1f28
+                0x0000000000000378                pre_0x107d1e08
+                0x000000000000037c                post_0x107d1e08
+                0x000000000000039c                pre_0x107e7628
+                0x00000000000003a4                post_0x107e7628
+ .text          0x0000000000000418        0x4 crt0.o
+ .text.memcpy   0x000000000000041c      0x114 /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+                0x000000000000041c                memcpy
+ .text.memset   0x0000000000000530       0xfc /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
+                0x0000000000000530                memset
+                0x0000000000000630                . = ALIGN (0x8)
+ *fill*         0x000000000000062c        0x4 
+
+.glue_7         0x0000000000000630        0x0
+ .glue_7        0x0000000000000630        0x0 linker stubs
+
+.glue_7t        0x0000000000000630        0x0
+ .glue_7t       0x0000000000000630        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000630        0x0
+ .vfp11_veneer  0x0000000000000630        0x0 linker stubs
+
+.v4_bx          0x0000000000000630        0x0
+ .v4_bx         0x0000000000000630        0x0 linker stubs
+
+.fini           0x0000000000000630        0x0
+ *(.fini)
+                0x0000000000000630                . = ALIGN (0x8)
+
+.plt            0x0000000000000630       0x48
+ *(.plt)
+ .plt           0x0000000000000630       0x44 main.o
+ *(.iplt)
+ .iplt          0x0000000000000674        0x0 main.o
+                0x0000000000000678                . = ALIGN (0x8)
+ *fill*         0x0000000000000674        0x4 
+                0x0000000000000700                . = ALIGN (0x100)
+
+.rodata         0x0000000000000700       0x80
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.mcp_main.str1.1
+                0x0000000000000700       0x1a main.o
+                                         0x20 (size before relaxing)
+ .rodata.kern_main.str1.1
+                0x000000000000071a       0x64 main.o
+                0x0000000000000780                . = ALIGN (0x8)
+ *fill*         0x000000000000077e        0x2 
+
+.eh_frame_hdr   0x0000000000000780        0x0
+                0x0000000000000780                __eh_frame_hdr_start = .
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+                0x0000000000000780                __eh_frame_hdr_end = .
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+                0x0000000000000780                __dynamic_start__ = .
+
+.dynamic        0x0000000000000780       0xa0
+ *(.dynamic)
+ .dynamic       0x0000000000000780       0xa0 main.o
+                0x0000000000000780                _DYNAMIC
+
+.dynsym         0x0000000000000820      0x270
+ *(.dynsym)
+ .dynsym        0x0000000000000820      0x270 main.o
+
+.dynstr         0x0000000000000a90      0x1db
+ *(.dynstr)
+ .dynstr        0x0000000000000a90      0x1db main.o
+
+.rel.dyn        0x0000000000000c6c       0x60
+ .rel.got       0x0000000000000c6c       0x40 main.o
+ .rel.plt       0x0000000000000cac       0x20 main.o
+ .rel.bss       0x0000000000000ccc        0x0 main.o
+ .rel.data.rel.ro
+                0x0000000000000ccc        0x0 main.o
+ .rel.iplt      0x0000000000000ccc        0x0 main.o
+
+.rela.dyn
+ *(.rela.*)
+
+.interp         0x0000000000000ccc       0x11
+ *(.interp)
+ .interp        0x0000000000000ccc       0x11 main.o
+
+.hash           0x0000000000000ce0       0xe8
+ *(.hash)
+ .hash          0x0000000000000ce0       0xe8 main.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.gnu.version    0x0000000000000dc8        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000dc8        0x0 main.o
+
+.gnu.version_d  0x0000000000000dc8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000dc8        0x0 main.o
+
+.gnu.version_r  0x0000000000000dc8        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000dc8        0x0 main.o
+
+.note.gnu.build-id
+                0x0000000000000dc8       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000dc8       0x24 linker stubs
+                0x0000000000000e00                . = ALIGN (0x100)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata          0x0000000000000e00        0x0
+                0x0000000000000e00                __tdata_lma = .
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+                0x0000000000000e00                . = ALIGN (0x8)
+                0x0000000000000e00                __tdata_lma_end = .
+
+.tbss           0x0000000000000e00        0x0
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+                0x0000000000000e00                . = ALIGN (0x8)
+
+.preinit_array  0x0000000000000e00        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000000e00        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000000e00        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(.fini_array)
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x0000000000000e00                __got_start__ = .
+
+.got            0x0000000000000e00       0x20
+ *(.got)
+ .got           0x0000000000000e00       0x20 main.o
+ *(.igot)
+
+.got.plt        0x0000000000000e20       0x1c
+ *(.got.plt)
+ .got.plt       0x0000000000000e20       0x1c main.o
+                0x0000000000000e20                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000e3c        0x0 main.o
+                0x0000000000000e3c                __got_end__ = .
+
+.data           0x0000000000000e40        0x0
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.rel.ro   0x0000000000000e40        0x0 main.o
+                0x0000000000000e3c                __bss_start__ = .
+
+.bss            0x0000000000000e40    0x10000
+ *(.dynbss)
+ .dynbss        0x0000000000000e40        0x0 main.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ *(COMMON)
+                0x0000000000000e40                . = ALIGN (0x8)
+                0x0000000000000e40                __tls_start = .
+                0x0000000000000e40                . = (. + (SIZEOF (.tdata) + SIZEOF (.tbss)))
+                0x0000000000000e40                __tls_end = .
+                0x0000000000000e40                __heap_start = .
+                0x0000000000010e40                . = (. + 0x10000)
+ *fill*         0x0000000000000e40    0x10000 
+                0x0000000000010e40                __heap_end = .
+                0x0000000000010e40                __bss_end__ = .
+                0x0000000000010e40                __end__ = ABSOLUTE (.)
+                0x0000000000010f00                . = ALIGN (0x100)
+                0x0000000000010f00                __argdata__ = ABSOLUTE (.)
+
+/DISCARD/
+ *(.group .comment .note)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+LOAD /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libnosys.a
+LOAD main.o
+LOAD crt0.o
+START GROUP
+LOAD /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/12.1.0/be/libgcc.a
+LOAD /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a
+LOAD /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libc.a
+LOAD /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libsysbase.a
+END GROUP
+OUTPUT(/project/wafel_unlimit_mlc.elf elf32-bigarm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x2a
+ .ARM.attributes
+                0x0000000000000000       0x2c main.o
+ .ARM.attributes
+                0x000000000000002c       0x1b crt0.o
+ .ARM.attributes
+                0x0000000000000047       0x2a /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000071       0x2a /opt/devkitpro/devkitARM/arm-none-eabi/lib/be/libg.a(lib_a-memset.o)
