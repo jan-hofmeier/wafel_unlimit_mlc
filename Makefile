@@ -105,12 +105,12 @@ all: $(BUILD)
 $(BUILD):
 	@[ -d $@ ] || mkdir -p $@
 	@make --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
-	@mv wafel_unlimit_mlc.elf wafel_unlimit_mlc.ipx
+	@mv $(OUTPUT).elf $(OUTPUT).ipx
 
 #---------------------------------------------------------------------------------
 clean:
 	@echo clean ...
-	@rm -fr $(BUILD) $(OUTPUT).elf $(OUTPUT)-strip.elf
+	@rm -fr $(BUILD) $(OUTPUT).elf $(OUTPUT)-strip.elf $(OUTPUT).ipx
 
 
 #---------------------------------------------------------------------------------
