@@ -35,7 +35,7 @@ One way to install a larger MLC media on your Wii U would be to replace the 8GB 
 
 ## How to use
 
-Put the wafel_unlimit_mlc.ipx together with wafel_core.ipx from stroopwafel in /wiiu/ios_plugins on your sdcard
+Put the `wafel_unlimit_mlc.ipx` together with `wafel_core.ipx` from stroopwafel in `/wiiu/ios_plugins` on your sdcard
 
 ## Building
 
