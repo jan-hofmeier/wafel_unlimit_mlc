@@ -6,7 +6,7 @@ This plugin for [stroopwafel](https://github.com/shinyquagsire23/stroopwafel) pa
 
 - Disables SCFM (SLC cache for MLC)
 
-If you unlimit the size of the MLC, you first need to format it and reinstall the system files. A second stroopwafel plugin will be provided to do the format and install.
+If you unlimit the size of the MLC, you need to format it and reinstall the system files. A this can be done with the [wafel_setup_mlc](https://github.com/jan-hofmeier/wafel_setup_mlc) stroopwafel plugin.
 
 
 
